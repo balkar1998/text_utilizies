@@ -27,7 +27,6 @@ const TextForm = (props) => {
     const handleRedoClick = () => {
         let undoWord = text.split(' ')
         undoWord.push(exWord)
-        console.log(exWord)
         if(exWord != '')
         {
             setText(undoWord.join(' '))
@@ -54,7 +53,6 @@ const TextForm = (props) => {
     let wordCount = 0;
     const countWord = (text) => {
         let arr = text.split(' ')
-        console.log(arr)
         for (let index = 0; index < arr.length; index++) {
             if(arr[index] != '')
             {
